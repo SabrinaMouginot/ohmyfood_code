@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SabrinaMouginot/ohmyfood_code/issues"
   },
-  "homepage": "https://github.com/SabrinaMouginot/ohmyfood_code#readme"
+  "homepage": "https://github.com/SabrinaMouginot/ohmyfood_code#readme",
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
 }
