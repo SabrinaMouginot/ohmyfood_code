@@ -3,4 +3,10 @@
   color: white;
 }
 
+@media screen {
+  .restaurant img {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */

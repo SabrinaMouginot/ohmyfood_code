@@ -5,3 +5,14 @@ $dark-grey:#353535;
     color: white;
 }
 
+@mixin flex{
+    @media screen {
+        width: 100%;
+    }
+}
+.restaurant{
+    img{
+        @include flex;
+
+    }
+}
