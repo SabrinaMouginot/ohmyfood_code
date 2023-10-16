@@ -1,0 +1,25 @@
+@import "../utils/variables";
+
+.foot {
+    background-color: $dark-grey;
+    color: white;
+    padding: 22px 25px;
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        i {
+            margin-right: 11px;
+        }
+    }
+
+    h2 {
+        margin-top: 0px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
