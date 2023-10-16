@@ -1,18 +1,10 @@
-$dark-grey:#353535;
+@import "../utils/mixins";
+@import "../components/footer";
+@import "../utils/base";
 
-.foot{
-    background-color: $dark-grey;
-    color: white;
-}
-
-@mixin flex{
-    @media screen {
-        width: 100%;
-    }
-}
 .restaurant{
     img{
-        @include flex;
+        @include w-100;
 
     }
 }
