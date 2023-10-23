@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="Css/pages/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="main-container"> 
+    <div class="main-container">
         <header>
             <h1>Ohmyfood</h1>
         </header>
@@ -27,22 +29,39 @@
         </div>
 
         <main>
-            <section class="restaurants" id="restaurants">
-                <h2>Restaurants</h2>
-                <div class="restaurant">
-                    <a href="Menu/la-palette-du-gout.html">
-                        <article class="card">
-                            <img src="Images/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                alt="Image de la table d'un restaurant">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">La palette du goût</h3>
-                                    <p class="card-subtitle">Ménilmontant</p>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
+            <section class="fonctionnement p020" >
+                <h2>Fonctionnement</h2>
+                <div class="btn-fonctionnement">
+                    <div>1</div>
+                    <i class="fa-xs fa-solid fa-mobile" aria-hidden="true"></i>
+                    <span>Choisissez un restaurant</span>
                 </div>
+                <div class="btn-fonctionnement">
+                    <div>1</div>
+                    <i class="fa-xs fa-solid fa-bars" aria-hidden="true"></i>
+                    <span>Choisissez un restaurant</span>
+                </div>
+                <div class="btn-fonctionnement">
+                    <div>1</div>
+                    <i class="fa-xs fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <span>Choisissez un restaurant</span>
+                </div>
+
+            </section>
+            <section class="restaurants p020" id="restaurants">
+                <h2>Restaurants</h2>
+                <a class="restaurant" href="Menu/la-palette-du-gout.html">
+                    <article class="card">
+                        <img src="Images/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Image de la table d'un restaurant">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">La palette du goût</h3>
+                                <p class="card-subtitle">Ménilmontant</p>
+                            </div>
+                        </div>
+                    </article>
+                </a>
 
                 <div class="restaurant">
                     <a href="Menu/la-note-enchantee.html">
@@ -90,7 +109,7 @@
                 </div>
 
             </section>
-            
+
         </main>
 
         <footer class="foot">
@@ -100,8 +119,9 @@
                 <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
                 <li><a href="#">Mention légale</a></li>
                 <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-             </ul>
+            </ul>
         </footer>
     </div>
 </body>
+
 </html>

@@ -2,17 +2,31 @@
 @import "../components/footer";
 @import "../utils/base";
 
-.main-container{
-    padding-left: 17px;
-    padding-right: 18px;
-    background-color: $rose-pastelle;
+
+main {
+    margin-bottom: 60px;
 }
 
-main{
-    .restaurants{
-        gap: 18px;
-        @include flex-column;
-    }
+.fonctionnement {
+    @include flex-column;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    gap: 25px;
+}
+
+.btn-fonctionnement {
+    @include flex-row;
+    background-color: $rose-pastelle;
+    align-items: center;
+    height: 73px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.restaurants {
+    gap: 18px;
+    @include flex-column;
+    background-color: $rose-pastelle;
 }
 
 .restaurant {
@@ -35,9 +49,11 @@ main{
         @include flex-column;
         box-sizing: border-box;
         gap: 5px;
+
         .card-title {
-            margin:0;
+            margin: 0;
         }
+
         .card-subtitle {
             margin: 0;
         }
