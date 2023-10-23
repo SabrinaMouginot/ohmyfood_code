@@ -5,6 +5,7 @@
 .main-container{
     padding-left: 17px;
     padding-right: 18px;
+    background-color: $rose-pastelle;
 }
 
 main{
@@ -45,6 +46,7 @@ main{
     .card {
         @include flex-column;
         @include w-100;
+        background-color: $hell;
     }
 
 }
