@@ -10,6 +10,7 @@
 main{
     .restaurants{
         gap: 18px;
+        @include flex-column;
     }
 }
 
@@ -19,9 +20,8 @@ main{
         height: 251px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        @include flex;
         justify-content: space-between;
-        flex-direction: row;
+        @include flex-row;
         padding: 3px;
     }
 
@@ -30,9 +30,8 @@ main{
         padding-left: 13px;
         padding-bottom: 12px;
         padding-top: 15px;
-        @include flex;
         justify-content: space-between;
-        flex-direction: column;
+        @include flex-column;
         box-sizing: border-box;
         gap: 5px;
         .card-title {
@@ -44,8 +43,7 @@ main{
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         @include w-100;
     }
 
