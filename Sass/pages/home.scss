@@ -9,24 +9,35 @@
     padding-top: 68px;
     padding-bottom: 68px;
     gap: 25px;
+
+    h2 {
+        margin: 0;
+    }
 }
 
 .btn-fonctionnement {
     @include flex-row;
-    background-color: $light-grey;
     align-items: center;
     justify-content: space-evenly;
-    height: 73px;
-    // border-radius: 20px;
     @include rounded;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    height: 73px;
+    background-color: $light-grey;
+    box-shadow: 0px 4px 15px 0px $dark-grey;
+    .nr{
+        border-radius: 50%;
+        padding: 0 1.5%;
+        background-color: #a85bda;
+        color: white;
+        margin-left: -5%;
+        // margin-left: -65px;
+    }
 }
 
 .restaurants {
     gap: 18px;
     @include flex-column;
     background-color: $light-grey;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
     //ce padding a remplacé le margin-bottom précédemment inscrit dans le main pour que la couleurs $light-grey s'applique aussi sur margin.
 }
 
