@@ -52,8 +52,11 @@ h1 {
   display: block;
   text-align: center;
   background-color: #F6F6F6;
-  padding-top: 68px;
-  padding-bottom: 68px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.reserve h2 {
+  margin: 0;
 }
 
 .btn-menu {
@@ -74,9 +77,12 @@ h1 {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding-top: 68px;
-  padding-bottom: 68px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   gap: 25px;
+}
+.fonctionnement h2 {
+  margin: 0;
 }
 
 .btn-fonctionnement {
@@ -102,7 +108,11 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
+  padding-top: 60px;
   padding-bottom: 60px;
+}
+.restaurants h2 {
+  margin: 0;
 }
 
 .restaurant img {

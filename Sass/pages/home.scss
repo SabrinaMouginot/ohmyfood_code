@@ -7,8 +7,10 @@
     display: block;
     text-align: center;
     background-color: $light-grey;
-    padding-top: 68px;
-    padding-bottom: 68px;
+    @include p-68-60;
+    h2 {
+        margin: 0;
+    }
 }
 
 .btn-menu {
@@ -25,23 +27,20 @@
 
 .fonctionnement {
     @include flex-column;
-    padding-top: 68px;
-    padding-bottom: 68px;
+    @include p-68-60;
+    // padding-top: 30px;
+    // padding-bottom: 68px;
     gap: 25px;
 
-    // h2 {
-    //     margin: 0;
-    // }
+    h2 {
+        margin: 0;
+    }
 }
 
 .btn-fonctionnement {
     @include flex-row;
     @include btn-style;
     @include rounded;
-
-    // .content{
-    //     justify-content: space-around;
-    // }
 
     height: 73px;
     background-color: $light-grey;
@@ -60,8 +59,10 @@
     gap: 18px;
     @include flex-column;
     background-color: $light-grey;
-    padding-bottom: 60px;
-    //ce padding a remplacé le margin-bottom précédemment inscrit dans le main pour que la couleurs $light-grey s'applique aussi sur margin.
+    @include p-68-60;
+    h2 {
+        margin: 0;
+    }
 }
 
 .restaurant {

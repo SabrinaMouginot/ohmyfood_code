@@ -40,3 +40,8 @@
     color: $light;
     background:linear-gradient($secondary, $primary);
 }
+
+@mixin p-68-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
