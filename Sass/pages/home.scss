@@ -17,17 +17,15 @@
 
 .btn-fonctionnement {
     @include flex-row;
-    align-items: center;
-    justify-content: space-between;
-
-    .content{
-        justify-content: space-around;
-    }
-
+    @include btn-style;
     @include rounded;
+
+    // .content{
+    //     justify-content: space-around;
+    // }
+
     height: 73px;
     background-color: $light-grey;
-    box-shadow: 0px 4px 15px 0px $dark-grey;
 
     .nr {
         border-radius: 50%;
@@ -37,6 +35,16 @@
         margin-left: -2%;
         // margin-left: -35px;
     }
+}
+
+.btn-menu {
+    @include flex-row;
+    @include btn-style;
+    @include rounded;
+    height: 50px;
+    // width: 218px;
+    width: 60%;
+    @include degrade;
 }
 
 .restaurants {
