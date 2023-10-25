@@ -5,23 +5,21 @@
 
 .reserve {
     display: block;
-    // margin-left: auto;
-    // margin-right: auto;
-
-    // justify-content: center;
     text-align: center;
-    h2, p{
-        margin: 0;
-    }
+    background-color: $light-grey;
+    padding-top: 68px;
+    padding-bottom: 68px;
 }
 
 .btn-menu {
-    @include flex-row;
-    @include btn-style;
-    @include rounded;
+    width: 60%;
     height: 50px;
     // width: 218px;
-    width: 60%;
+    @include flex-row;
+    @include btn-style;
+    margin-left: auto;
+    margin-right: auto;
+    @include rounded;
     @include degrade;
 }
 
@@ -31,9 +29,9 @@
     padding-bottom: 68px;
     gap: 25px;
 
-    h2 {
-        margin: 0;
-    }
+    // h2 {
+    //     margin: 0;
+    // }
 }
 
 .btn-fonctionnement {
