@@ -4,6 +4,12 @@
 @import "../utils/variables";
 
 .reserve {
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    // justify-content: center;
+    text-align: center;
     h2, p{
         margin: 0;
     }

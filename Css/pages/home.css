@@ -48,6 +48,10 @@ h1 {
   font-family: "Shrikhand", serif;
 }
 
+.reserve {
+  display: block;
+  text-align: center;
+}
 .reserve h2, .reserve p {
   margin: 0;
 }
