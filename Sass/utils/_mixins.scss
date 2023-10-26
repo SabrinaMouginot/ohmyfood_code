@@ -12,10 +12,6 @@
     flex-direction: row;
 }
 
-@mixin border-radius {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 @mixin rounded-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -42,4 +38,9 @@
 @mixin p-68-60 {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+@mixin block {
+    display: block;
+    text-align: center;
 }
