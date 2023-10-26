@@ -3,6 +3,11 @@
 @import "../utils/base";
 @import "../utils/variables";
 
+header {
+    display: block;
+    text-align: center;
+}
+
 .reserve {
     display: block;
     text-align: center;
@@ -14,7 +19,7 @@
 }
 
 .btn-menu {
-    width: 60%;
+    width: 70%;
     height: 50px;
     // width: 218px;
     @include flex-row;
