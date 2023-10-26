@@ -6,6 +6,18 @@
 header {
     display: block;
     text-align: center;
+    .recherche {
+        height: 50px;
+        background-color: darken($light-grey, 5%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        .txtarea{
+            border-width : 0;
+            background-color: darken($light-grey, 5%);
+        }
+    }
 }
 
 .reserve {
