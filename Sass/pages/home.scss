@@ -39,7 +39,7 @@ header {
 }
 
 .btn-menu {
-    width: 70%;
+    width: 80%;
     height: 50px;
     // width: 218px;
     @include flex-row;
@@ -103,16 +103,30 @@ header {
         @include w-100;
         padding: 14px;
         justify-content: space-between;
-        @include flex-column;
+        @include flex-row;
         box-sizing: border-box;
         gap: 5px;
 
-        .card-title {
-            margin: 0;
+        .card-txt {
+            width: 80%;
+
+            .card-title {
+                margin: 0;
+                // @include flex-row;
+            }
+    
+            .card-subtitle {
+                margin: 0;
+                // @include flex-row;
+            }
         }
 
-        .card-subtitle {
-            margin: 0;
+        .card-rating {
+            width:15%;
+            @include flex-column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            // width: 10%;
         }
     }
 

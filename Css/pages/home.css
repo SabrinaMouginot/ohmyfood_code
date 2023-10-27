@@ -84,7 +84,7 @@ header .recherche .txtarea {
 }
 
 .btn-menu {
-  width: 70%;
+  width: 80%;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -154,15 +154,25 @@ header .recherche .txtarea {
   padding: 14px;
   justify-content: space-between;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
   gap: 5px;
 }
-.restaurant .card-content .card-title {
+.restaurant .card-content .card-txt {
+  width: 80%;
+}
+.restaurant .card-content .card-txt .card-title {
   margin: 0;
 }
-.restaurant .card-content .card-subtitle {
+.restaurant .card-content .card-txt .card-subtitle {
   margin: 0;
+}
+.restaurant .card-content .card-rating {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .restaurant .card {
   display: flex;
