@@ -5,6 +5,12 @@
 
 header {
     @include block;
+
+    h1 {
+        margin: 0;
+        @include p-14-14;
+    }
+
     .recherche {
         height: 50px;
         background-color: darken($light-grey, 5%);
@@ -12,10 +18,12 @@ header {
         align-items: center;
         justify-content: center;
         gap: 17px;
-        .txtarea{
-            border-width : 0;
+
+        .txtarea {
+            border-width: 0;
             background-color: darken($light-grey, 5%);
             font-size: 16px;
+            width: 30%;
         }
     }
 }
@@ -23,7 +31,8 @@ header {
 .reserve {
     @include block;
     background-color: $light-grey;
-    @include p-68-60;
+    @include p-60-60;
+
     h2 {
         margin: 0;
     }
@@ -43,9 +52,7 @@ header {
 
 .fonctionnement {
     @include flex-column;
-    @include p-68-60;
-    // padding-top: 30px;
-    // padding-bottom: 68px;
+    @include p-60-60;
     gap: 25px;
 
     h2 {
@@ -75,7 +82,8 @@ header {
     gap: 18px;
     @include flex-column;
     background-color: $light-grey;
-    @include p-68-60;
+    @include p-60-60;
+
     h2 {
         margin: 0;
     }

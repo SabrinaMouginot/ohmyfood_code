@@ -2,6 +2,11 @@
         width: 100%;
 }
 
+@mixin block {
+    display: block;
+    text-align: center;
+}
+
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -35,12 +40,11 @@
     background:linear-gradient($secondary, $primary);
 }
 
-@mixin p-68-60 {
+@mixin p-60-60 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
-@mixin block {
-    display: block;
-    text-align: center;
+@mixin p-14-14 {
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
