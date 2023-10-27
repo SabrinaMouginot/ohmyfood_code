@@ -72,7 +72,7 @@ header {
         @include rounded-50;
         padding: 0 1.5%;
         background-color: $primary;
-        color: $light;
+        color: darken($light-grey, 0%);
         margin-left: -2%;
         // margin-left: -35px;
     }
@@ -112,12 +112,10 @@ header {
 
             .card-title {
                 margin: 0;
-                // @include flex-row;
             }
     
             .card-subtitle {
                 margin: 0;
-                // @include flex-row;
             }
         }
 
@@ -126,7 +124,6 @@ header {
             @include flex-column;
             justify-content: flex-start;
             align-items: flex-end;
-            // width: 10%;
         }
     }
 

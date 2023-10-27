@@ -1,7 +1,7 @@
 @import "../utils/variables";
 
 .foot {
-    background-color: $dark-grey;
+    background-color: darken($light-grey, 80%);
     color: white;
     padding: 22px 25px;
 
