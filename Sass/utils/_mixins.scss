@@ -34,6 +34,11 @@
     justify-content: space-around;
 }
 
+@mixin space-evenly {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 @mixin degrade {
     color: $light;
     background:linear-gradient($secondary, $primary);

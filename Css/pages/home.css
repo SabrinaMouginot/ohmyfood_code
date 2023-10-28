@@ -116,7 +116,7 @@ header .recherche .txtarea {
   flex-direction: row;
   border-radius: 20px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-shadow: 0px 4px 15px 0px #d0d0d0;
   background-color: #F6F6F6;
   height: 73px;
