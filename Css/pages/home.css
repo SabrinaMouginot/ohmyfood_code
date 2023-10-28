@@ -185,6 +185,16 @@ header .recherche .txtarea {
   justify-content: flex-start;
   align-items: flex-end;
 }
+.restaurant .card-content .card-rating .empty-heart::before {
+  content: "\f004"; /* Code Unicode pour un cœur vide */
+  display: block;
+  color: transparent; /* Rend le cœur vide */
+  width: 1em;
+  height: 1em;
+  background: linear-gradient(to top, #FF79DA, #9356DC); /* Applique un dégradé de couleurs au cœur vide */
+  -webkit-background-clip: text; /* Pour les navigateurs WebKit (Safari, Chrome) */
+  background-clip: text; /* Pour les autres navigateurs */
+}
 .restaurant .card {
   display: flex;
   flex-direction: column;
