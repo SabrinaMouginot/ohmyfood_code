@@ -1,10 +1,15 @@
 .empty-heart::before {
-    content: '\f004'; /* Code Unicode pour un cœur vide */
+    content: '\f004';
+    /* Code Unicode pour un cœur vide */
     display: block;
-    color: transparent; /* Rend le cœur vide */
+    color: transparent;
+    /* Rend le cœur vide */
     width: 1em;
     height: 1em;
-    background: linear-gradient(to top, $secondary, $primary); /* Applique un dégradé de couleurs au cœur vide */
-    -webkit-background-clip: text; /* Pour les navigateurs WebKit (Safari, Chrome) */
-    background-clip: text; /* Pour les autres navigateurs */
-  }
+    background: linear-gradient(to top, $secondary, $primary);
+    /* Applique un dégradé de couleurs au cœur vide */
+    -webkit-background-clip: text;
+    /* Pour les navigateurs WebKit (Safari, Chrome) */
+    background-clip: text;
+    /* Pour les autres navigateurs */
+}
