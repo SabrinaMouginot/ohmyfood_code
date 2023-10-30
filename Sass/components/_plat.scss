@@ -1,0 +1,42 @@
+
+.btn-plat {
+    @include flex-row;
+    @include rounded;
+    justify-content: space-between;
+    box-shadow: 0px 4px 15px 0px darken($light-grey, 15%);
+    background-color: $light-grey;
+
+
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .prix {
+        @include flex-row;
+        align-items: end;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    .coche {
+        @include flex-row;
+        align-items: center;
+        background-color: $tertiary;
+        width: 60px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-right: -60px;
+        visibility: hidden;
+    }
+}
+
+.btn-plat:hover {
+    .coche {
+        margin-right: 0;
+        visibility: visible;
+    }
+}
