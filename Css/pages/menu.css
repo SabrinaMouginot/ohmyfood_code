@@ -1,3 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+.foot {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 22px 25px;
+}
+.foot ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.foot ul i {
+  margin-right: 11px;
+}
+.foot h2 {
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Shrikhand", serif;
+}
 
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.p020 {
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
+header img {
+  width: 100%;
+  height: 251px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 25px;
+}
+.fonctionnement h2 {
+  margin: 0;
+}
+.fonctionnement .btn-fonctionnement {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 15px 0px #d0d0d0;
+  background-color: #F6F6F6;
+  height: 73px;
+  /* Positionne le chiffre sur la bordure gauche */
+  position: relative;
+}
+
+.reserve {
+  display: block;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.reserve .btn-menu {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 4px 15px 0px #2a2a2a;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
 
 /*# sourceMappingURL=menu.css.map */
