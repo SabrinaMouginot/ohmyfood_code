@@ -49,6 +49,45 @@ h1 {
   font-family: "Shrikhand", serif;
 }
 
+.btn-plat {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 15px 0px #d0d0d0;
+  background-color: #F6F6F6;
+}
+.btn-plat p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 15px;
+}
+.btn-plat .prix {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.btn-plat .coche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 60px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-right: -60px;
+  visibility: hidden;
+}
+
+.btn-plat:hover .coche {
+  margin-right: 0;
+  visibility: visible;
+}
+
 body {
   background-color: #F6F6F6;
 }
@@ -73,24 +112,14 @@ header img {
   padding: 3px;
 }
 
-.fonctionnement {
+.plats {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 40px 0px;
 }
-.fonctionnement h2 {
+.plats h2 {
   margin: 0;
-}
-.fonctionnement .btn-fonctionnement {
-  display: flex;
-  flex-direction: row;
-  border-radius: 20px;
-  align-items: center;
-  justify-content: space-evenly;
-  box-shadow: 0px 4px 15px 0px #d0d0d0;
-  background-color: #F6F6F6;
-  height: 73px;
 }
 
 .reserve {
@@ -111,6 +140,7 @@ header img {
   border-radius: 20px;
   color: #ffffff;
   background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
 }
 
 /*# sourceMappingURL=menu.css.map */

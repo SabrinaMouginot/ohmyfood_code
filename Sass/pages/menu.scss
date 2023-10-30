@@ -2,6 +2,7 @@
 @import "../components/footer";
 @import "../utils/base";
 @import "../utils/variables";
+@import "../components/plat";
 
 body{
     background-color: $light-grey;
@@ -25,7 +26,7 @@ header {
     }
 }
 
-.fonctionnement {
+.plats {
     
     @include flex-column;
     gap: 12px;
@@ -35,15 +36,6 @@ header {
         margin: 0;
     }
 
-    .btn-fonctionnement {
-        @include flex-row;
-        @include rounded;
-        @include space-evenly;
-
-        box-shadow: 0px 4px 15px 0px darken($light-grey, 15%);
-        background-color: $light-grey;
-        height: 73px;
-    }
 }
 
 .reserve {
