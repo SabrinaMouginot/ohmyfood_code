@@ -10,4 +10,5 @@
     margin-right: auto;
     @include rounded;
     @include degrade;
+    border: none;
 }
