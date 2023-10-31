@@ -64,6 +64,9 @@ h1 {
   margin: 0;
   padding: 15px;
 }
+.btn-plat p span {
+  font-weight: bold;
+}
 .btn-plat .prix {
   display: flex;
   flex-direction: row;
@@ -128,6 +131,7 @@ header img {
 }
 .plats h2 {
   margin: 0;
+  font-weight: lighter;
 }
 
 .reserve {
