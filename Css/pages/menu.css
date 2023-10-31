@@ -134,6 +134,9 @@ header img {
   font-weight: lighter;
   font-size: 16px;
 }
+.plats .btn-plat p {
+  width: 245px;
+}
 
 .reserve {
   display: block;
