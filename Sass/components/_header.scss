@@ -1,0 +1,12 @@
+header {
+    @include flex-row;
+    height: 63px;
+    @include space-evenly;
+    font-size: 30px;
+
+    span {
+        margin: 0;
+        @include p-14-14;
+        font-family: 'Shrikhand', serif;
+    }  
+}
