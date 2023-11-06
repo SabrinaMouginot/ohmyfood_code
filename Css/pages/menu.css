@@ -1,28 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-.foot {
-  background-color: #2a2a2a;
-  color: white;
-  padding: 22px 25px;
-}
-.foot ul {
-  list-style: none;
-  padding-inline-start: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 7px;
-}
-.foot ul i {
-  margin-right: 11px;
-}
-.foot h2 {
-  margin-top: 0px;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: "Shrikhand", serif;
-}
-
 html, body {
   padding: 0;
   margin: 0;
@@ -50,6 +27,44 @@ h1 {
   font-family: "Shrikhand", serif;
 }
 
+.foot {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 22px 25px;
+}
+.foot ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.foot ul i {
+  margin-right: 11px;
+}
+.foot h2 {
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Shrikhand", serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 63px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+header span {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: "Shrikhand", serif;
+}
+
 .btn-plat {
   display: flex;
   flex-direction: row;
@@ -63,6 +78,7 @@ h1 {
   text-overflow: ellipsis;
   margin: 0;
   padding: 15px;
+  width: 100%;
 }
 .btn-plat p span {
   font-weight: bold;
@@ -73,6 +89,7 @@ h1 {
   align-items: end;
   font-weight: bold;
   padding-bottom: 15px;
+  margin-right: 20px;
 }
 .btn-plat .coche {
   display: flex;
@@ -93,43 +110,57 @@ h1 {
   visibility: visible;
 }
 
+.heart-full {
+  color: transparent;
+  /* Rend le cœur vide */
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  /* Applique un dégradé de couleurs au cœur vide */
+  -webkit-background-clip: text;
+  /* Pour les navigateurs WebKit (Safari, Chrome) */
+  background-clip: text;
+  /* Pour les autres navigateurs */
+  display: none;
+}
+
+.fa-heart {
+  font-size: 22px;
+}
+
+.btn-menu {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 4px 15px 0px #2a2a2a;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  color: #ffffff;
+  background: linear-gradient(#ff46cc, #782cd3);
+  border: none;
+}
+
+.btn-menu:hover {
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 4px 25px 0px #2a2a2a;
+}
+
 body {
   background-color: #F6F6F6;
 }
 
-header {
-  display: block;
-  text-align: center;
-}
-header h2 {
-  margin: 0;
-  font-size: 28px;
-  font-family: "Shrikhand", serif;
-  margin-top: -50px;
-  box-sizing: border-box;
-  width: 100%;
-  border: solid #F6F6F6 10px;
-  padding: 32px 17px 0px 17px;
-  border-radius: 10% 10% 0 0;
-  z-index: 1;
-}
-header h2 .heart-full {
-  color: transparent; /* Rend le cœur vide */
-  background: linear-gradient(to top, #FF79DA, #9356DC); /* Applique un dégradé de couleurs au cœur vide */
-  -webkit-background-clip: text; /* Pour les navigateurs WebKit (Safari, Chrome) */
-  background-clip: text; /* Pour les autres navigateurs */
-  display: none;
-}
-header h2 .fa-heart {
-  font-size: 22px;
-}
-header img {
+.entete img {
   width: 100%;
   height: 251px;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
   object-fit: cover;
+}
+
+.plats-entete {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .plats {
@@ -148,33 +179,11 @@ header img {
   border-bottom-color: #99E2D0;
   border-bottom-width: 3px;
 }
-.plats .btn-plat p {
-  width: 245px;
-}
 
 .reserve {
   display: block;
   text-align: center;
   margin: 60px;
-}
-.reserve .btn-menu {
-  width: 80%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 4px 15px 0px #2a2a2a;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  color: #ffffff;
-  background: linear-gradient(#ff46cc, #782cd3);
-  border: none;
-}
-.reserve .btn-menu:hover {
-  color: #ffffff;
-  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -1,31 +1,23 @@
-@import "../utils/mixins";
-@import "../components/footer";
-@import "../utils/base";
 @import "../utils/variables";
+@import "../utils/base";
+@import "../utils/mixins";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/heart";
 
+.recherche {
+    height: 50px;
+    background-color: darken($light-grey, 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
 
-header {
-    @include block;
-
-    h1 {
-        margin: 0;
-        @include p-14-14;
-    }
-
-    .recherche {
-        height: 50px;
+    .txtarea {
+        border-width: 0;
         background-color: darken($light-grey, 5%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 17px;
-
-        .txtarea {
-            border-width: 0;
-            background-color: darken($light-grey, 5%);
-            font-size: 16px;
-            width: 30%;
-        }
+        font-size: 16px;
+        width: 30%;
     }
 }
 
@@ -128,7 +120,6 @@ header {
                 @include flex-column;
                 justify-content: flex-start;
                 align-items: flex-end;
-                @import "../components/heart";
             }
         }
 

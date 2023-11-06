@@ -1,38 +1,28 @@
+@import "../utils/variables";
+@import "../utils/base";
 @import "../utils/mixins";
 @import "../components/footer";
-@import "../utils/base";
-@import "../utils/variables";
+@import "../components/header";
 @import "../components/plat";
+@import "../components/heart";
+@import "../components/mainbtn";
 
 body {
     background-color: $light-grey;
 }
 
-header {
-    @include block;
-
-    h2 {
-        margin: 0;
-        font-size: 28px;
-        font-family: 'Shrikhand', serif;
-        @import "../components/heart";
-        margin-top: -50px;
-        box-sizing: border-box;
-        width: 100%;
-        border: solid $light-grey 10px;
-        padding: 32px 17px 0px 17px;
-        border-radius: 10% 10% 0 0;
-        z-index: 1;
-    }
-
+.entete {
     img {
         @include w-100;
         height: 251px;
-        // @include rounded-top;
-        justify-content: space-between;
-        @include flex-row;
         object-fit: cover;
     }
+
+}
+
+.plats-entete {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .plats {
@@ -48,22 +38,14 @@ header {
         // text-decoration: underline $tertiary;
         width: 40px;
         height: 27px;
-        border-bottom-style:solid;
-        border-bottom-color:$tertiary;
+        border-bottom-style: solid;
+        border-bottom-color: $tertiary;
         border-bottom-width: 3px;
 
     }
-
-    .btn-plat {
-        p {
-            width: 245px;
-        }
-    }
-
 }
 
 .reserve {
     @include block;
-    @import "../components/mainbtn";
     margin: 60px;
 }
