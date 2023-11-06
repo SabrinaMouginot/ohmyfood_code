@@ -7,6 +7,10 @@
     margin-left: auto;
     margin-right: auto;
     @include rounded;
-    @include degrade;
+    @include degradedark;
     border: none;
+}
+
+.btn-menu:hover{
+    @include degrade;
 }

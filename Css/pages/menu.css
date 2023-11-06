@@ -161,8 +161,12 @@ header img {
   margin-right: auto;
   border-radius: 20px;
   color: #ffffff;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff46cc, #782cd3);
   border: none;
+}
+.reserve .btn-menu:hover {
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 /*# sourceMappingURL=menu.css.map */
