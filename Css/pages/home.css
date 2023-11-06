@@ -165,6 +165,7 @@ header .recherche .txtarea {
   display: flex;
   flex-direction: row;
   padding: 3px;
+  object-fit: cover;
 }
 .restaurants .restaurant .card-content {
   width: 100%;
