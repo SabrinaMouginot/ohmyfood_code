@@ -13,4 +13,5 @@
 
 .btn-menu:hover{
     @include degrade;
+    box-shadow: 0px 4px 25px 0px darken($light-grey, 80%);
 }
