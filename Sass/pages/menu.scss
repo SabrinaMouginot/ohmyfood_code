@@ -45,6 +45,13 @@ header {
         margin: 0;
         font-weight: lighter;
         font-size: 16px;
+        // text-decoration: underline $tertiary;
+        width: 40px;
+        height: 27px;
+        border-bottom-style:solid;
+        border-bottom-color:$tertiary;
+        border-bottom-width: 3px;
+
     }
 
     .btn-plat {
