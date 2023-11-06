@@ -1,8 +1,12 @@
 .heart-full {
-color: transparent; /* Rend le cœur vide */
-background: linear-gradient(to top, $secondary, $primary); /* Applique un dégradé de couleurs au cœur vide */
-    -webkit-background-clip: text; /* Pour les navigateurs WebKit (Safari, Chrome) */
-    background-clip: text; /* Pour les autres navigateurs */
+    color: transparent;
+    /* Rend le cœur vide */
+    background: linear-gradient(to top, $secondary, $primary);
+    /* Applique un dégradé de couleurs au cœur vide */
+    -webkit-background-clip: text;
+    /* Pour les navigateurs WebKit (Safari, Chrome) */
+    background-clip: text;
+    /* Pour les autres navigateurs */
     display: none;
 }
 
