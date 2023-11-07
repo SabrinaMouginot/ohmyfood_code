@@ -67,9 +67,13 @@ header span {
 
 .heart-full {
   color: transparent;
+  /* Rend le cœur vide */
   background: linear-gradient(to top, #FF79DA, #9356DC);
+  /* Applique un dégradé de couleurs au cœur vide */
   -webkit-background-clip: text;
+  /* Pour les navigateurs WebKit (Safari, Chrome) */
   background-clip: text;
+  /* Pour les autres navigateurs */
   font-size: 22px;
   cursor: pointer;
 }
@@ -81,15 +85,18 @@ header span {
 }
 
 .heart-checkbox {
-  display: none; /* Masque la case à cocher par défaut */
+  display: none;
+  /* Masque la case à cocher par défaut */
 }
 
 .heart-checkbox:checked + label .heart-empty {
-  display: none; /* Cache le cœur vide lorsque la case est cochée */
+  display: none;
+  /* Cache le cœur vide lorsque la case est cochée */
 }
 
 .heart-checkbox:checked + label .heart-full {
-  display: inline; /* Affiche le cœur dégradé lorsque la case est cochée */
+  display: inline;
+  /* Affiche le cœur dégradé lorsque la case est cochée */
 }
 
 .label {
@@ -97,12 +104,9 @@ header span {
 }
 
 /* Styles supplémentaires pour améliorer l'apparence du cœur */
-.card-rating label {
-  margin: 0;
-}
-
 .card-rating i {
-  transition: all 0.3s; /* Transition pour une animation fluide */
+  transition: all 0.3s;
+  /* Transition pour une animation fluide */
 }
 
 .recherche {
