@@ -148,7 +148,6 @@ header span {
   cursor: pointer;
 }
 
-/* Styles supplémentaires pour améliorer l'apparence du cœur */
 .card-rating i {
   transition: all 0.3s;
   /* Transition pour une animation fluide */
