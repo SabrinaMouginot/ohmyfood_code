@@ -13,29 +13,3 @@
 .fa-heart {
     font-size: 22px;
 }
-
-
-
-// .heart-icon {
-//     // Styles pour le conteneur du cœur
-//     display: flex; // Assurez-vous que les icônes de cœur sont affichées en ligne
-//     cursor: pointer; // Change le curseur pour indiquer que c'est cliquable
-//     user-select: none; // Empêche la sélection de texte lorsque vous cliquez
-
-//     .fa-heart {
-//         font-size: 22px;
-//         transition: color 0.3s; // Ajoutez une transition pour l'effet de changement de couleur
-
-//         &.heart-empty {
-//             color: transparent;
-//         }
-
-//         &.heart-full {
-//             // color: $yourDesiredColor; // Remplacez $yourDesiredColor par la couleur que vous souhaitez
-//             color: transparent;
-//             /* Rend le cœur vide */
-//             background: linear-gradient(to top, $secondary, $primary);
-//             /* Applique un dégradé de couleurs au cœur vide */
-//         }
-//     }
-// }

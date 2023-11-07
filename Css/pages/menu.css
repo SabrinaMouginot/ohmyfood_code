@@ -154,20 +154,23 @@ body {
 
 .entete img {
   width: 100%;
-  height: 251px;
   object-fit: cover;
 }
 
 .plats-entete {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  z-index: 3;
 }
 
 .plats {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 40px 0px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  background-color: #F6F6F6;
 }
 .plats h2 {
   margin: 0;
