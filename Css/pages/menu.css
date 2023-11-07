@@ -119,6 +119,7 @@ header span {
   /* Pour les navigateurs WebKit (Safari, Chrome) */
   background-clip: text;
   /* Pour les autres navigateurs */
+  display: none;
   font-size: 22px;
   cursor: pointer;
 }
@@ -144,8 +145,9 @@ header span {
   /* Affiche le cœur dégradé lorsque la case est cochée */
 }
 
-.label {
-  cursor: pointer;
+/* Afficher le cœur vide lorsqu'il n'est pas coché */
+.heart-checkbox:not(:checked) + label .heart-empty {
+  display: inline;
 }
 
 .card-rating i {

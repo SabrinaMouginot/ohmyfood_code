@@ -7,20 +7,11 @@
     /* Pour les navigateurs WebKit (Safari, Chrome) */
     background-clip: text;
     /* Pour les autres navigateurs */
-    // display: none;
+    display: none; 
+    // cocher le coeur dégradé par défaut.
     font-size: 22px;
     cursor: pointer;
 }
-
-
-// .heart-full {
-//     color: transparent;
-//     background: linear-gradient(to top, $secondary, $primary);
-//     -webkit-background-clip: text;
-//     background-clip: text;
-//     font-size: 22px;
-//     cursor: pointer;
-// }
 
 .heart-empty {
     color: transparent;
@@ -48,8 +39,9 @@
 // je cible l'élément <label> immédiatement suivant cet élément dans la structure HTML. 
 // Cela permet de définir des styles spécifiques pour le label lorsque la case est cochée.
 
-.label {
-    cursor: pointer;
+/* Afficher le cœur vide lorsqu'il n'est pas coché */
+.heart-checkbox:not(:checked) + label .heart-empty {
+    display: inline;
 }
 
 .card-rating i {
