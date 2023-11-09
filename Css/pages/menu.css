@@ -127,10 +127,8 @@ header span {
 }
 
 .heart-empty {
-  color: transparent;
   font-size: 22px;
   cursor: pointer;
-  border: 1px black solid;
 }
 
 .heart-checkbox {
