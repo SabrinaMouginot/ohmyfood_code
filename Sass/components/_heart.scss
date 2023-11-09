@@ -7,8 +7,8 @@
     /* Pour les navigateurs WebKit (Safari, Chrome) */
     background-clip: text;
     /* Pour les autres navigateurs */
-    display: none; 
-    // cocher le coeur dégradé par défaut.
+    display: none;
+    /* cocher le coeur dégradé par défaut.*/
     font-size: 22px;
     cursor: pointer;
 }
@@ -24,24 +24,30 @@
     /* Masque la case à cocher par défaut */
 }
 
-.heart-checkbox:checked+label .heart-empty {
-    display: none;
-    /* Cache le cœur vide lorsque la case est cochée */
+.heart-checkbox:checked+label {
+    .heart-empty {
+        display: none;
+        /* Styles pour le cœur vide lorsque la case est cochée */
+    }
+
+    .heart-full {
+        display: inline;
+        /* Affiche le cœur dégradé lorsque la case est cochée */
+    }
 }
 
-.heart-checkbox:checked+label .heart-full {
-    display: inline;
-    /* Affiche le cœur dégradé lorsque la case est cochée */
-}
 
-// :checked + label signifie que 
-// lorsque la case à cocher avec la classe .heart-checkbox est cochée, 
-// je cible l'élément <label> immédiatement suivant cet élément dans la structure HTML. 
-// Cela permet de définir des styles spécifiques pour le label lorsque la case est cochée.
+// // :checked + label signifie que 
+// // lorsque la case à cocher avec la classe .heart-checkbox est cochée, 
+// // je cible l'élément <label> immédiatement suivant cet élément dans la structure HTML. 
+// // Cela permet de définir des styles spécifiques pour le label lorsque la case est cochée.
 
-/* Afficher le cœur vide lorsqu'il n'est pas coché */
-.heart-checkbox:not(:checked) + label .heart-empty {
-    display: inline;
+
+/* Styles pour afficher le cœur vide par défaut */
+.heart-checkbox:not(:checked)+label {
+    .heart-empty {
+        display: inline;
+    }
 }
 
 .card-rating i {
