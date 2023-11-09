@@ -123,6 +123,7 @@ header span {
   /* cocher le coeur dégradé par défaut.*/
   font-size: 22px;
   cursor: pointer;
+  transition: color 0.3s;
 }
 
 .heart-empty {
@@ -145,9 +146,12 @@ header span {
   /* Affiche le cœur dégradé lorsque la case est cochée */
 }
 
-/* Styles pour afficher le cœur vide par défaut */
+/* Styles pour afficher le cœur vide */
 .heart-checkbox:not(:checked) + label .heart-empty {
   display: inline;
+}
+.heart-checkbox:not(:checked) + label .heart-full {
+  display: none;
 }
 
 .card-rating i {
