@@ -75,6 +75,7 @@ header span {
   background-clip: text;
   /* Pour les autres navigateurs */
   display: none;
+  /* cocher le coeur dégradé par défaut.*/
   font-size: 22px;
   cursor: pointer;
 }
@@ -92,15 +93,14 @@ header span {
 
 .heart-checkbox:checked + label .heart-empty {
   display: none;
-  /* Cache le cœur vide lorsque la case est cochée */
+  /* Styles pour le cœur vide lorsque la case est cochée */
 }
-
 .heart-checkbox:checked + label .heart-full {
   display: inline;
   /* Affiche le cœur dégradé lorsque la case est cochée */
 }
 
-/* Afficher le cœur vide lorsqu'il n'est pas coché */
+/* Styles pour afficher le cœur vide par défaut */
 .heart-checkbox:not(:checked) + label .heart-empty {
   display: inline;
 }
