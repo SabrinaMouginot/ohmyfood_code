@@ -204,6 +204,14 @@ body {
   margin-top: -20px;
   background-color: #F6F6F6;
 }
+.plats h1 {
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+.plats .card-rating {
+  margin-left: auto;
+}
 .plats h2 {
   margin: 0;
   font-weight: lighter;

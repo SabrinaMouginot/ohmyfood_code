@@ -10,17 +10,20 @@
 body {
     background-color: $light-grey;
 }
+
 .entete {
     img {
         @include w-100;
         object-fit: cover;
     }
 }
+
 .plats-entete {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     z-index: 3;
 }
+
 .plats {
     @include flex-column;
     gap: 12px;
@@ -28,6 +31,17 @@ body {
     margin-bottom: 40px;
     margin-top: -20px;
     background-color: $light-grey;
+
+    h1 {
+        font-weight: lighter;
+        display: flex; // Utilisez une classe flex pour aligner les éléments en ligne
+        align-items: center; // Alignez les éléments verticalement au centre
+    }
+
+    .card-rating {
+        margin-left: auto; // Placez le cœur à la fin de la ligne (à droite)
+    }
+
     h2 {
         margin: 0;
         font-weight: lighter;
@@ -40,6 +54,7 @@ body {
         border-bottom-width: 3px;
     }
 }
+
 .reserve {
     @include block;
     margin: 60px;
