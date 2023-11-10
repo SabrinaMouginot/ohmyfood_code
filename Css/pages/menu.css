@@ -53,16 +53,25 @@ h1 {
 header {
   display: flex;
   flex-direction: row;
-  height: 63px;
+  font-size: 24px;
   align-items: center;
-  justify-content: space-evenly;
-  font-size: 30px;
-}
-header span {
-  margin: 0;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 17px;
+  padding-right: 89px;
+  gap: 42px;
+}
+header span {
   font-family: "Shrikhand", serif;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 17px;
+}
+header .back-link {
+  text-decoration: none;
+}
+header .back-arrow {
+  padding: 0;
 }
 
 .btn-plat {

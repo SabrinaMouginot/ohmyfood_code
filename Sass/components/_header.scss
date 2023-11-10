@@ -1,12 +1,27 @@
 header {
     @include flex-row;
-    height: 63px;
-    @include space-evenly;
-    font-size: 30px;
+    // @include space-evenly;
+    font-size: 24px;
+    align-items: center;
+    @include p-14-14;
+    padding-left: 17px;
+    padding-right: 89px;
+    gap: 42px;
 
     span {
-        margin: 0;
-        @include p-14-14;
         font-family: 'Shrikhand', serif;
-    }  
+        @include space-evenly;
+        padding: 0 17px;
+        // margin-right: 42px; /* Utilisez le gap spécifié entre la flèche et le texte Ohmyfood */
+    }
+
+    .back-link {
+        text-decoration: none;
+
+    }
+
+    .back-arrow {
+        padding: 0;
+    }
+
 }
