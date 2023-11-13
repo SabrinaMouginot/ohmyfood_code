@@ -24,3 +24,25 @@
         font-family: 'Shrikhand', serif;
     }
 }
+
+
+/* ********************************************* RESPONSIVE ********************************************* */
+/*Desktop (more than 1024px)*/
+@media (min-width: 1025px) {
+    .foot {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        ul {
+            flex-direction: row;
+            justify-content: flex-end;
+            }
+        }
+
+}
+
+/* Tablettes (between 768px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
