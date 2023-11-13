@@ -18,6 +18,11 @@ body {
     }
 }
 
+
+h1 {
+    font-family: 'Shrikhand', serif;
+}
+
 .plats-entete {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -36,10 +41,11 @@ body {
         font-weight: lighter;
         display: flex; // Utilisez une classe flex pour aligner les éléments en ligne
         align-items: center; // Alignez les éléments verticalement au centre
+        text-align: center;
     }
 
     .card-rating {
-        margin-left: auto; // Placez le cœur à la fin de la ligne (à droite)
+        margin-left: 24px;
     }
 
     h2 {
