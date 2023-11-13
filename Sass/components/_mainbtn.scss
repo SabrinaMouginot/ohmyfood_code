@@ -1,6 +1,5 @@
 .btn-menu {
-    width: 80%;
-    height: 50px;
+    padding: 13px 19px;
     @include flex-row;
     @include space-around;
     box-shadow: 0px 4px 15px 0px darken($light-grey, 80%);
