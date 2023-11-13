@@ -4,14 +4,10 @@ header {
     font-size: 24px;
     align-items: center;
     @include p-14-14;
-    padding-left: 17px;
-    padding-right: 89px;
     gap: 42px;
 
     span {
         font-family: 'Shrikhand', serif;
-        @include space-evenly;
-        padding: 0 17px;
         // margin-right: 42px; /* Utilisez le gap spécifié entre la flèche et le texte Ohmyfood */
     }
 
