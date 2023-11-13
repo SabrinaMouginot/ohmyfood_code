@@ -133,3 +133,22 @@
     }
 
 }
+
+/* ********************************************* RESPONSIVE ********************************************* */
+/*Desktop (more than 1024px)*/
+@media (min-width: 1024px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+/* Tablettes (between 768px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+}

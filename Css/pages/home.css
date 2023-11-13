@@ -30,6 +30,8 @@ h1 {
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 24px;
   align-items: center;
   padding-top: 14px;
@@ -74,6 +76,20 @@ header .back-arrow {
   font-family: "Shrikhand", serif;
 }
 
+/* ********************************************* RESPONSIVE ********************************************* */
+/*Desktop (more than 1024px)*/
+@media (min-width: 1025px) {
+  .foot {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .foot ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+/* Tablettes (between 768px and 1024px) */
 .heart-full {
   color: transparent;
   /* Rend le cœur vide */
@@ -262,6 +278,24 @@ header .back-arrow {
   width: 100%;
   border-radius: 20px;
   background-color: #ffffff;
+}
+
+/* ********************************************* RESPONSIVE ********************************************* */
+/*Desktop (more than 1024px)*/
+@media (min-width: 1024px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
+/* Tablettes (between 768px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
