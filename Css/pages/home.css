@@ -281,6 +281,10 @@ header span {
   .fonctionnement .btn-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .fonctionnement .btn-container .btn-fonctionnement {
+    width: 100%;
   }
   .restaurants-container .restaurants {
     display: grid;

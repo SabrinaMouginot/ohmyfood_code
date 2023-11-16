@@ -153,6 +153,10 @@
     .fonctionnement {
         .btn-container {
             @include flex-row;
+            justify-content: space-around;
+            .btn-fonctionnement{
+                width: 100%;
+            }
         }
     }
 
