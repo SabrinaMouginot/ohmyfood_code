@@ -78,12 +78,6 @@ header {
 header span {
   font-family: "Shrikhand", serif;
 }
-header .back-link {
-  text-decoration: none;
-}
-header .back-arrow {
-  padding: 0;
-}
 
 .btn-plat {
   display: flex;

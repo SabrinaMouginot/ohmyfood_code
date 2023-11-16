@@ -6,18 +6,29 @@ header {
     @include p-14-14;
     gap: 42px;
 
+
     span {
         font-family: 'Shrikhand', serif;
+        // @include space-evenly;
         // margin-right: 42px; /* Utilisez le gap spécifié entre la flèche et le texte Ohmyfood */
     }
 
-    .back-link {
-        text-decoration: none;
+    // .back-link {
+    //     text-decoration: none;
+    //     .back-arrow{
+    //         justify-content: left;
+    //     }
+    //     .title{
+    //         @include space-evenly;
+    //     }
 
-    }
+    // }
 
-    .back-arrow {
-        padding: 0;
-    }
+    // .back-arrow {
+    //     padding: 0;
+    //     width: 30px;
+    //     height: 30px;
+    //     font-weight: 700;
+    // }
 
 }
