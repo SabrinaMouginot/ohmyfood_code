@@ -278,6 +278,27 @@ header span {
 /* ********************************************* RESPONSIVE ********************************************* */
 /*Desktop (more than 1024px)*/
 @media (min-width: 769px) {
+  .reserve {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .reserve .reserve-content h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .reserve .reserve-content p {
+    font-size: 18px;
+  }
+  .reserve btn-menu {
+    font-size: 18px;
+  }
+  .fonctionnement {
+    gap: 25px;
+    padding: 50px 180px;
+  }
+  .fonctionnement h2 {
+    margin: 0;
+  }
   .fonctionnement .btn-container {
     display: flex;
     flex-direction: row;
@@ -286,9 +307,20 @@ header span {
   .fonctionnement .btn-container .btn-fonctionnement {
     width: 100%;
   }
+  .restaurants-container {
+    padding: 30px 180px;
+  }
+  .restaurants-container h2 {
+    padding-bottom: 28px;
+  }
   .restaurants-container .restaurants {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 50px 100px;
+  }
+  .restaurants-container .restaurants .restaurant .card img {
+    height: 230px;
   }
 }
 
