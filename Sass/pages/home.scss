@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
     gap: 17px;
-    // width: 100%;
 
     .txtarea {
         border-width: 0;
@@ -33,7 +32,7 @@
     background-color: $light-grey;
     @include p-60-60;
 
-    h2 {
+    h1 {
         margin: 0;
     }
 
@@ -172,7 +171,7 @@
 
     .fonctionnement {
         gap: 25px;
-        padding: 50px 180px;
+        @include p30-180;
 
         h2 {
             margin: 0
@@ -189,7 +188,7 @@
     }
 
     .restaurants-container {
-        padding: 30px 180px;
+        @include p30-180;
 
         h2 {
             padding-bottom: 28px;

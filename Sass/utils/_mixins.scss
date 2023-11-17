@@ -1,5 +1,5 @@
 @mixin w-100 {
-        width: 100%;
+    width: 100%;
 }
 
 @mixin block {
@@ -21,11 +21,12 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 @mixin rounded {
     border-radius: 20px;
 }
 
-@mixin rounded-50{
+@mixin rounded-50 {
     border-radius: 50%;
 }
 
@@ -41,19 +42,24 @@
 
 @mixin degradedark {
     color: $light;
-    background:linear-gradient(darken($secondary,10%), darken($primary,10%));
+    background: linear-gradient(darken($secondary, 10%), darken($primary, 10%));
 }
 
 @mixin degrade {
     color: $light;
-    background:linear-gradient($secondary, $primary);
+    background: linear-gradient($secondary, $primary);
 }
 
 @mixin p-60-60 {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 @mixin p-14-14 {
     padding-top: 14px;
     padding-bottom: 14px;
+}
+
+@mixin p30-180 {
+    padding: 30px 180px;
 }

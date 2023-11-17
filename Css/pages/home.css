@@ -172,7 +172,7 @@ header span {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.reserve h2 {
+.reserve h1 {
   margin: 0;
 }
 
@@ -294,7 +294,7 @@ header span {
   }
   .fonctionnement {
     gap: 25px;
-    padding: 50px 180px;
+    padding: 30px 180px;
   }
   .fonctionnement h2 {
     margin: 0;
