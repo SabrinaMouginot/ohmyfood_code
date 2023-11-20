@@ -102,7 +102,6 @@
                 @include rounded-top;
                 justify-content: space-between;
                 @include flex-row;
-                padding: 3px;
                 object-fit: cover;
             }
 
@@ -148,7 +147,7 @@
 
 /* ********************************************* RESPONSIVE ********************************************* */
 /*Desktop (more than 769px)*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .reserve {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -162,10 +161,6 @@
             p {
                 font-size: 18px;
             }
-        }
-
-        btn-menu {
-            font-size: 18px;
         }
     }
 

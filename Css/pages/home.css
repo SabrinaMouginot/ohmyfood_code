@@ -26,13 +26,15 @@ a {
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
   font-size: 24px;
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  gap: 42px;
+  justify-content: center;
+}
+header a {
+  position: absolute;
+  left: 10px;
 }
 header span {
   font-family: "Shrikhand", serif;
@@ -92,7 +94,8 @@ header span {
   /* cocher le coeur dégradé par défaut.*/
   font-size: 22px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: visibility 0.3s;
+  visibility: hidden;
 }
 
 .heart-empty {
@@ -110,6 +113,7 @@ header span {
   /* Styles pour le cœur vide lorsque la case est cochée */
 }
 .heart-checkbox:checked + label .heart-full {
+  visibility: visible;
   display: inline;
   /* Affiche le cœur dégradé lorsque la case est cochée */
 }
@@ -239,7 +243,6 @@ header span {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  padding: 3px;
   object-fit: cover;
 }
 .restaurants-container .restaurants .restaurant .card-content {
@@ -277,7 +280,7 @@ header span {
 
 /* ********************************************* RESPONSIVE ********************************************* */
 /*Desktop (more than 769px)*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .reserve {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -289,12 +292,9 @@ header span {
   .reserve .reserve-content p {
     font-size: 18px;
   }
-  .reserve btn-menu {
-    font-size: 18px;
-  }
   .fonctionnement {
     gap: 25px;
-    padding: 30px 180px;
+    padding: 30px 10%;
   }
   .fonctionnement h2 {
     margin: 0;
@@ -308,7 +308,7 @@ header span {
     width: 100%;
   }
   .restaurants-container {
-    padding: 30px 180px;
+    padding: 30px 10%;
   }
   .restaurants-container h2 {
     padding-bottom: 28px;
