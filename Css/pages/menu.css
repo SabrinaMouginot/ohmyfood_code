@@ -67,13 +67,15 @@ a {
 header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
   font-size: 24px;
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  gap: 42px;
+  justify-content: center;
+}
+header a {
+  position: absolute;
+  left: 10px;
 }
 header span {
   font-family: "Shrikhand", serif;
@@ -84,7 +86,7 @@ header span {
   flex-direction: row;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px #d0d0d0;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
 }
 .btn-plat p {
   white-space: nowrap;
@@ -106,8 +108,7 @@ header span {
   margin-right: 20px;
 }
 .btn-plat .coche {
-  display: flex;
-  flex-direction: row;
+  display: none;
   align-items: center;
   justify-content: center;
   color: #ffffff;
@@ -120,6 +121,8 @@ header span {
 }
 
 .btn-plat:hover .coche {
+  display: flex;
+  flex-direction: row;
   margin-right: 0;
   visibility: visible;
 }
@@ -137,7 +140,8 @@ header span {
   /* cocher le coeur dégradé par défaut.*/
   font-size: 22px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: visibility 0.3s;
+  visibility: hidden;
 }
 
 .heart-empty {
@@ -155,6 +159,7 @@ header span {
   /* Styles pour le cœur vide lorsque la case est cochée */
 }
 .heart-checkbox:checked + label .heart-full {
+  visibility: visible;
   display: inline;
   /* Affiche le cœur dégradé lorsque la case est cochée */
 }
@@ -197,28 +202,34 @@ body {
   background-color: #F6F6F6;
 }
 
+.entete {
+  z-index: 1;
+  position: relative;
+  height: 350px;
+}
 .entete img {
   width: 100%;
   object-fit: cover;
+  height: 350px;
 }
 
 h1 {
   font-family: "Shrikhand", serif;
 }
 
-.plats-entete {
+.menu {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   z-index: 3;
+  margin-top: -20px;
+  position: relative;
 }
 
 .plats {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  position: relative;
   margin-bottom: 40px;
-  margin-top: -20px;
   background-color: #F6F6F6;
 }
 .plats h1 {
