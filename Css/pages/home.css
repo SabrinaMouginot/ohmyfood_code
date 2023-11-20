@@ -276,7 +276,7 @@ header span {
 }
 
 /* ********************************************* RESPONSIVE ********************************************* */
-/*Desktop (more than 1024px)*/
+/*Desktop (more than 769px)*/
 @media (min-width: 769px) {
   .reserve {
     padding-top: 30px;

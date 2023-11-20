@@ -194,7 +194,7 @@ header span {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #F6F6F6;
 }
 
 .entete img {
@@ -217,9 +217,9 @@ h1 {
   flex-direction: column;
   gap: 12px;
   position: relative;
-  margin: -20px 192px 40px 192px;
+  margin-bottom: 40px;
+  margin-top: -20px;
   background-color: #F6F6F6;
-  padding: 0 210px;
 }
 .plats h1 {
   font-weight: lighter;
@@ -245,6 +245,18 @@ h1 {
   display: block;
   text-align: center;
   margin: 60px;
+}
+
+/* ********************************************* RESPONSIVE ********************************************* */
+@media (min-width: 769px) {
+  body {
+    background-color: #ffffff;
+  }
+  .menu {
+    background-color: #F6F6F6;
+    margin: -20px 192px 40px 192px;
+    padding: 0 210px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

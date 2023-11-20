@@ -8,7 +8,7 @@
 @import "../components/mainbtn";
 
 body {
-    background-color: $light;
+    background-color: $light-grey;
 }
 
 .entete {
@@ -33,11 +33,9 @@ h1 {
     @include flex-column;
     gap: 12px;
     position: relative;
-    // margin-bottom: 40px;
-    // margin-top: -20px;
-    margin:-20px 192px 40px 192px;
+    margin-bottom: 40px;
+    margin-top: -20px;
     background-color: $light-grey;
-    padding: 0 210px;
 
     h1 {
         font-weight: lighter;
@@ -66,4 +64,18 @@ h1 {
 .reserve {
     @include block;
     margin: 60px;
+}
+
+/* ********************************************* RESPONSIVE ********************************************* */
+@media (min-width: 769px) {
+    body {
+        background-color: $light;
+    }
+
+    .menu {
+        background-color: $light-grey;
+        margin: -20px 192px 40px 192px;
+        padding: 0 210px;
+        // gap: 40px;
+    }
 }
