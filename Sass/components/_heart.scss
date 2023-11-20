@@ -11,7 +11,8 @@
     /* cocher le coeur dégradé par défaut.*/
     font-size: 22px;
     cursor: pointer;
-    transition: color 0.3s; // Ajout de la transition pour la couleur
+    transition: visibility 0.3s; // Ajout de la transition pour la couleur
+    visibility: hidden;
 
     // background-size: 100% 200%; /* Double la taille du fond pour permettre le remplissage complet */
     // background-position: 0 100%; /* Initialiser le cœur complètement vide */
@@ -36,6 +37,7 @@
     }
 
     .heart-full {
+        visibility: visible;
         display: inline;
         /* Affiche le cœur dégradé lorsque la case est cochée */
     }
