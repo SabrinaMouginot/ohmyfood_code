@@ -194,7 +194,7 @@ header span {
 }
 
 body {
-  background-color: #F6F6F6;
+  background-color: #ffffff;
 }
 
 .entete img {
@@ -217,8 +217,7 @@ h1 {
   flex-direction: column;
   gap: 12px;
   position: relative;
-  margin-bottom: 40px;
-  margin-top: -20px;
+  margin: -20px 192px 40px 192px;
   background-color: #F6F6F6;
 }
 .plats h1 {
