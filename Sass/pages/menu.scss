@@ -71,6 +71,9 @@ h1 {
     margin: 60px;
 }
 
+
+/* APPARITION PROGRESSIF DU MENU */
+
 /* Définir une classe pour l'animation */
 .fade-in {
     opacity: 0;
@@ -92,6 +95,25 @@ h1 {
 }
 
 
+/* APPARITION PROGRESSIVE DE L'ENCOCHE */
+.fade-ex {
+    opacity: 0;
+    /* Commencer avec une opacité de 0 */
+    transform: translateX(-20px);
+    /* Déplacer le texte vers le bas (facultatif) */
+    animation: fadeEx ease-out 3s forwards;
+    /* Utiliser une animation de fondu en 3 secondes */
+}
+
+/* Définir l'animation fadeEx */
+@keyframes fadeEx {
+    to {
+        opacity: 1;
+        /* Arriver à une opacité de 1 à la fin de l'animation */
+        transform: translateX(0);
+        /* Remettre le texte à sa position d'origine */
+    }
+}
 
 /* ********************************************* RESPONSIVE ********************************************* */
 @media (min-width: 769px) {
