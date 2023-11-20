@@ -4,7 +4,7 @@
     @include rounded;
     // justify-content: space-between;
     box-shadow: 0px 4px 15px 0px darken($light-grey, 15%);
-    background-color: $light-grey;
+    background-color: $light;
 
 
     p {
@@ -28,7 +28,7 @@
     }
 
     .coche {
-        @include flex-row;
+        display: none;
         align-items: center;
         justify-content: center;
         color: $light;
@@ -43,6 +43,7 @@
 
 .btn-plat:hover {
     .coche {
+        @include flex-row;
         margin-right: 0;
         visibility: visible;
     }
