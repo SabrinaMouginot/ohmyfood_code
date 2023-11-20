@@ -254,8 +254,10 @@ h1 {
   }
   .menu {
     background-color: #F6F6F6;
-    margin: -20px 192px 40px 192px;
-    padding: 0 210px;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
