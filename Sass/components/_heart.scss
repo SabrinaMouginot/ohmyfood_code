@@ -38,11 +38,23 @@
 
     .heart-full {
         visibility: visible;
-        display: inline;
+        // display: inline;
         /* Affiche le cœur dégradé lorsque la case est cochée */
+        display: inline-block;
+        animation: gradientAnimation 3s linear;
+        /* Durée de l'animation de 3 secondes */
+    }
+
+    @keyframes gradientAnimation {
+        from {
+            background-size: 100% 0;
+        }
+
+        to {
+            background-size: 100% 100%;
+        }
     }
 }
-
 
 // :checked + label signifie que 
 // lorsque la case à cocher avec la classe .heart-checkbox est cochée, 

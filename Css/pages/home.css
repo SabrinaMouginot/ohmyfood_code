@@ -114,8 +114,18 @@ header span {
 }
 .heart-checkbox:checked + label .heart-full {
   visibility: visible;
-  display: inline;
   /* Affiche le cœur dégradé lorsque la case est cochée */
+  display: inline-block;
+  animation: gradientAnimation 3s linear;
+  /* Durée de l'animation de 3 secondes */
+}
+@keyframes gradientAnimation {
+  from {
+    background-size: 100% 0;
+  }
+  to {
+    background-size: 100% 100%;
+  }
 }
 
 /* Styles pour afficher le cœur vide */
