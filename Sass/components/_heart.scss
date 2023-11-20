@@ -12,6 +12,10 @@
     font-size: 22px;
     cursor: pointer;
     transition: color 0.3s; // Ajout de la transition pour la couleur
+
+    // background-size: 100% 200%; /* Double la taille du fond pour permettre le remplissage complet */
+    // background-position: 0 100%; /* Initialiser le cœur complètement vide */
+    // background-position: 0 0; /* Déplace le fond pour remplir complètement le cœur lorsqu'il est cochée */
 }
 
 .heart-empty {
