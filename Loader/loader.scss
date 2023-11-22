@@ -4,6 +4,13 @@
     flex-direction: column;
     // @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 3;
+    position: fixed; //position fixed pour qu'il soit aussi visible sur tout l'écran même si tu scroll
+    height: 100vh;
+    width: 100vw;
+    // le height et width pour toute la hauteur et largeur de l'écran (vh et vw)
+
     h1 {
         display: flex;
         justify-content: center;
@@ -37,7 +44,6 @@
             transform-origin: 15% 60%;
             animation: flip 2.1s ease-in-out infinite;
 
-
             .recto-verso {
                 position: absolute;
                 width: 100%;
@@ -52,7 +58,7 @@
                     width: 35%;
                     height: 20%;
                     background-color: transparent;
-                    border-top: 1vh solid #333;
+                    border-top: 1vh solid;
                     border-left: 1vh solid transparent;
                     border-radius: 100%;
                     transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
