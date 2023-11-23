@@ -101,6 +101,7 @@ header span {
 .heart-empty {
   font-size: 22px;
   cursor: pointer;
+  display: block;
 }
 
 .heart-checkbox {
@@ -116,7 +117,7 @@ header span {
   visibility: visible;
   /* Affiche le cœur dégradé lorsque la case est cochée */
   display: inline-block;
-  animation: gradientAnimation 3s linear;
+  animation: gradientAnimation 500ms ease-in-out;
   /* Durée de l'animation de 3 secondes */
 }
 @keyframes gradientAnimation {
@@ -131,9 +132,18 @@ header span {
 /* Styles pour afficher le cœur vide */
 .heart-checkbox:not(:checked) + label .heart-empty {
   display: inline;
+  animation: gradientAnimation 500ms ease-in-out;
 }
 .heart-checkbox:not(:checked) + label .heart-full {
   display: none;
+}
+@keyframes gradientAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card-rating i {
@@ -339,8 +349,6 @@ header span {
   justify-content: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 3;
-  position: fixed;
   height: 100vh;
   width: 100vw;
 }

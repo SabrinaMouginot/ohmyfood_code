@@ -13,48 +13,29 @@
     cursor: pointer;
     transition: visibility 0.3s; // Ajout de la transition pour la couleur
     visibility: hidden;
-
-    // background-size: 100% 200%; /* Double la taille du fond pour permettre le remplissage complet */
-    // background-position: 0 100%; /* Initialiser le cœur complètement vide */
-    // background-position: 0 0; /* Déplace le fond pour remplir complètement le cœur lorsqu'il est cochée */
 }
-
 .heart-empty {
     font-size: 22px;
     cursor: pointer;
+    display: block;
 }
-
 .heart-checkbox {
     display: none;
     /* Masque la case à cocher par défaut */
 }
-
-
 .heart-checkbox:checked+label {
     .heart-empty {
         display: none;
         /* Styles pour le cœur vide lorsque la case est cochée */
     }
-
     .heart-full {
         visibility: visible;
         // display: inline;
         /* Affiche le cœur dégradé lorsque la case est cochée */
         display: inline-block;
-        animation: gradientAnimation 3s linear;
+        animation: gradientAnimation 500ms ease-in-out;
         /* Durée de l'animation de 3 secondes */
     }
-
-    // @keyframes gradientAnimation {
-    //     from {
-    //         background-size: 100% 0;
-    //     }
-
-    //     to {
-    //         background-size: 100% 100%;
-    //     }
-    // }
-
     @keyframes gradientAnimation {
         from {
             opacity: 0;
@@ -64,24 +45,29 @@
         }
     }
 }
-
-// :checked + label signifie que 
-// lorsque la case à cocher avec la classe .heart-checkbox est cochée, 
-// je cible l'élément <label> immédiatement suivant cet élément dans la structure HTML. 
+// :checked + label signifie que
+// lorsque la case à cocher avec la classe .heart-checkbox est cochée,
+// je cible l'élément <label> immédiatement suivant cet élément dans la structure HTML.
 // Cela permet de définir des styles spécifiques pour le label lorsque la case est cochée.
-
 
 /* Styles pour afficher le cœur vide */
 .heart-checkbox:not(:checked)+label {
     .heart-empty {
         display: inline;
+        animation: gradientAnimation 500ms ease-in-out;
     }
-
     .heart-full {
         display: none;
     }
+    @keyframes gradientAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }
-
 .card-rating i {
     transition: all 0.3s;
     /* Transition pour une animation fluide */
