@@ -163,20 +163,20 @@ header span {
 }
 
 .recherche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 50px;
   background-color: #e9e9e9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 17px;
+}
+.recherche div {
+  width: 200px;
+  margin: auto;
 }
 .recherche .txtarea {
+  text-align: center;
   border-width: 0;
   background-color: #e9e9e9;
-  display: flex;
-  align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .reserve {
