@@ -121,10 +121,10 @@ header span {
 }
 @keyframes gradientAnimation {
   from {
-    background-size: 100% 0;
+    opacity: 0;
   }
   to {
-    background-size: 100% 100%;
+    opacity: 1;
   }
 }
 
