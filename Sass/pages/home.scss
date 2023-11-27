@@ -210,11 +210,19 @@
     flex-direction: column;
 
     background-color: rgba(0,0,0, 0.5);
-    // z-index: 3;
-    // position: fixed; //position fixed pour qu'il soit aussi visible sur tout l'écran même si tu scroll
+    z-index: 3;
+    position: fixed; //position fixed pour qu'il soit aussi visible sur tout l'écran même si tu scroll
     height: 100vh;
     width: 100vw;
     // le height et width pour toute la hauteur et largeur de l'écran (vh et vw)
+
+    animation: loader ease-out 3s forwards;
+
+    @keyframes loader {
+        to {
+            display: none;
+        }
+    }
 
     h1 {
         display: flex;
