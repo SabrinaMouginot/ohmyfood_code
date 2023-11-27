@@ -285,7 +285,6 @@ h1 {
 .menu {
   opacity: 0;
   /* Commencer avec une opacité de 0 */
-  /* Déplacer le texte vers le bas (facultatif) */
   animation: fadeIn ease-out 0.5s forwards;
   /* Utiliser une animation de fondu en 3 secondes */
 }
@@ -301,7 +300,6 @@ h1 {
 }
 /* APPARITION PROGRESSIVE DE L'ENCOCHE */
 .coche {
-  /* Commencer avec une opacité de 0 */
   transform: translateX(20px);
   /* Déplacer le texte vers la gauche */
   animation: fadeEx ease-out 0.5s forwards;

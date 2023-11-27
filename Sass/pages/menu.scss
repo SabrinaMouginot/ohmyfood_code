@@ -79,12 +79,10 @@ h1 {
 /* Définir une classe pour l'animation */
 
 .menu {
-// .plats {
-// .fade-in {
+    // .plats {
+    // .fade-in {
     opacity: 0;
     /* Commencer avec une opacité de 0 */
-    // transform: translateY(20px);
-    /* Déplacer le texte vers le bas (facultatif) */
     animation: fadeIn ease-out 0.5s forwards;
     /* Utiliser une animation de fondu en 3 secondes */
 }
@@ -102,9 +100,6 @@ h1 {
 
 /* APPARITION PROGRESSIVE DE L'ENCOCHE */
 .coche {
-// .fade-ex {
-    // opacity: 0;
-    /* Commencer avec une opacité de 0 */
     // transform-origin: right center; /* Définit le point d'origine à droite du bouton */
     transform: translateX(20px);
     /* Déplacer le texte vers la gauche */
