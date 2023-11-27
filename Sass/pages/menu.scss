@@ -78,13 +78,15 @@ h1 {
 
 /* Définir une classe pour l'animation */
 
-.menu {
-    // .plats {
-    // .fade-in {
-    opacity: 0;
-    /* Commencer avec une opacité de 0 */
-    animation: fadeIn ease-out 0.5s forwards;
-    /* Utiliser une animation de fondu en 3 secondes */
+// .menu {
+.app1 {
+    @include app-plat(2s);
+}
+.app2 {
+    @include app-plat(4s);
+}
+.app3 {
+    @include app-plat(6s);
 }
 
 /* Définir l'animation fadeIn */
@@ -98,24 +100,6 @@ h1 {
 }
 
 
-/* APPARITION PROGRESSIVE DE L'ENCOCHE */
-.coche {
-    // transform-origin: right center; /* Définit le point d'origine à droite du bouton */
-    transform: translateX(20px);
-    /* Déplacer le texte vers la gauche */
-    animation: fadeEx ease-out 0.5s forwards;
-    /* Utiliser une animation de fondu en 3 secondes */
-}
-
-/* Définir l'animation fadeEx */
-@keyframes fadeEx {
-    to {
-        // opacity: 1;
-        /* Arriver à une opacité de 1 à la fin de l'animation */
-        transform: translateX(0);
-        /* Remettre le texte à sa position d'origine */
-    }
-}
 
 /* ********************************************* RESPONSIVE ********************************************* */
 @media (min-width: 769px) {

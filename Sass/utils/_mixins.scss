@@ -63,3 +63,10 @@
 @mixin p30-180 {
     padding: 30px 10%;
 }
+
+@mixin app-plat($timer) {
+    opacity: 0;
+    /* Commencer avec une opacité de 0 */
+    animation: fadeIn ease-out $timer forwards;
+    /* Utiliser une animation de fondu en 3 secondes */
+}

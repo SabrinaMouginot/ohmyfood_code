@@ -118,15 +118,28 @@ header span {
   border-bottom-right-radius: 15px;
   margin-right: -60px;
   visibility: hidden;
+  animation: fadeEx ease-in-out 0.5s forwards;
+  /* Utiliser une animation de fondu en 3 secondes */
 }
 
 .btn-plat:hover .coche {
   display: flex;
   flex-direction: row;
-  margin-right: 0;
-  visibility: visible;
 }
 
+/* APPARITION PROGRESSIVE DE L'ENCOCHE */
+/* Définir l'animation fadeEx */
+@keyframes fadeEx {
+  from {
+    visibility: hidden;
+  }
+  to {
+    /* Arriver à une opacité de 1 à la fin de l'animation */
+    margin-right: 0px;
+    /* Remettre le texte à sa position d'origine */
+    visibility: visible;
+  }
+}
 .heart-full {
   color: transparent;
   /* Rend le cœur vide */
@@ -282,10 +295,24 @@ h1 {
 
 /* APPARITION PROGRESSIF DU MENU */
 /* Définir une classe pour l'animation */
-.menu {
+.app1 {
   opacity: 0;
   /* Commencer avec une opacité de 0 */
-  animation: fadeIn ease-out 0.5s forwards;
+  animation: fadeIn ease-out 2s forwards;
+  /* Utiliser une animation de fondu en 3 secondes */
+}
+
+.app2 {
+  opacity: 0;
+  /* Commencer avec une opacité de 0 */
+  animation: fadeIn ease-out 4s forwards;
+  /* Utiliser une animation de fondu en 3 secondes */
+}
+
+.app3 {
+  opacity: 0;
+  /* Commencer avec une opacité de 0 */
+  animation: fadeIn ease-out 6s forwards;
   /* Utiliser une animation de fondu en 3 secondes */
 }
 
@@ -295,22 +322,6 @@ h1 {
     opacity: 1;
     /* Arriver à une opacité de 1 à la fin de l'animation */
     transform: translateY(0);
-    /* Remettre le texte à sa position d'origine */
-  }
-}
-/* APPARITION PROGRESSIVE DE L'ENCOCHE */
-.coche {
-  transform: translateX(20px);
-  /* Déplacer le texte vers la gauche */
-  animation: fadeEx ease-out 0.5s forwards;
-  /* Utiliser une animation de fondu en 3 secondes */
-}
-
-/* Définir l'animation fadeEx */
-@keyframes fadeEx {
-  to {
-    /* Arriver à une opacité de 1 à la fin de l'animation */
-    transform: translateX(0);
     /* Remettre le texte à sa position d'origine */
   }
 }
