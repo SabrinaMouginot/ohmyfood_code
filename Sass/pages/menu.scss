@@ -85,7 +85,7 @@ h1 {
     /* Commencer avec une opacité de 0 */
     // transform: translateY(20px);
     /* Déplacer le texte vers le bas (facultatif) */
-    animation: fadeIn ease-out 1s forwards;
+    animation: fadeIn ease-out 0.5s forwards;
     /* Utiliser une animation de fondu en 3 secondes */
 }
 
@@ -101,19 +101,21 @@ h1 {
 
 
 /* APPARITION PROGRESSIVE DE L'ENCOCHE */
-.fade-ex {
-    opacity: 0;
+.coche {
+// .fade-ex {
+    // opacity: 0;
     /* Commencer avec une opacité de 0 */
-    transform: translateX(-20px);
+    // transform-origin: right center; /* Définit le point d'origine à droite du bouton */
+    transform: translateX(20px);
     /* Déplacer le texte vers la gauche */
-    animation: fadeEx ease-out 3s forwards;
+    animation: fadeEx ease-out 0.5s forwards;
     /* Utiliser une animation de fondu en 3 secondes */
 }
 
 /* Définir l'animation fadeEx */
 @keyframes fadeEx {
     to {
-        opacity: 1;
+        // opacity: 1;
         /* Arriver à une opacité de 1 à la fin de l'animation */
         transform: translateX(0);
         /* Remettre le texte à sa position d'origine */
