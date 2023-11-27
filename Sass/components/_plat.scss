@@ -37,13 +37,31 @@
         border-bottom-right-radius: 15px;
         margin-right: -60px;
         visibility: hidden;
+        animation: fadeEx ease-in-out 0.5s forwards;
+        /* Utiliser une animation de fondu en 3 secondes */
     }
 }
 
 .btn-plat:hover {
     .coche {
         @include flex-row;
-        margin-right: 0;
+    }
+}
+
+
+/* APPARITION PROGRESSIVE DE L'ENCOCHE */
+
+
+/* Définir l'animation fadeEx */
+@keyframes fadeEx {
+    from {
+        visibility: hidden;
+    }
+    to {
+        // opacity: 1;
+        /* Arriver à une opacité de 1 à la fin de l'animation */
+        margin-right: 0px;
+        /* Remettre le texte à sa position d'origine */
         visibility: visible;
     }
 }
