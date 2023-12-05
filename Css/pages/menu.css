@@ -113,13 +113,12 @@ header span {
   justify-content: center;
   color: #ffffff;
   background-color: #99E2D0;
-  width: 60px !important;
+  width: 0; /* Commencez avec une largeur de 0 */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-right: -60px;
+  margin-right: 0;
   visibility: hidden;
   animation: fadeEx ease-in-out 0.5s forwards;
-  /* Utiliser une animation de fondu en 3 secondes */
 }
 
 .btn-plat:hover .coche {
@@ -131,12 +130,10 @@ header span {
 /* Définir l'animation fadeEx */
 @keyframes fadeEx {
   from {
-    visibility: hidden;
+    width: 0;
   }
   to {
-    /* Arriver à une opacité de 1 à la fin de l'animation */
-    margin-right: 0px;
-    /* Remettre le texte à sa position d'origine */
+    width: 60px; /* La largeur finale de la coche */
     visibility: visible;
   }
 }
