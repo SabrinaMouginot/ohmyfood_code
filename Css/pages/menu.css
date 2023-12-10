@@ -113,15 +113,20 @@ header span {
   justify-content: center;
   color: #ffffff;
   background-color: #99E2D0;
-  width: 0; /* Commencez avec une largeur de 0 */
+  width: 0;
+  /* Commencez avec une largeur de 0 */
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-right: 0;
   visibility: hidden;
+  animation: fadeOut ease-in-out 0.5s forwards;
+}
+.btn-plat:hover .coche {
+  display: flex;
+  flex-direction: row;
   animation: fadeEx ease-in-out 0.5s forwards;
 }
-
-.btn-plat:hover .coche {
+.btn-plat:not(:hover) .coche {
   display: flex;
   flex-direction: row;
 }
@@ -133,8 +138,22 @@ header span {
     width: 0;
   }
   to {
-    width: 60px; /* La largeur finale de la coche */
+    width: 60px;
+    /* La largeur finale de la coche */
     visibility: visible;
+  }
+}
+/* DISPARITION PROGRESSIVE DE L'ENCOCHE */
+/* Définir l'animation fadeOut */
+@keyframes fadeOut {
+  from {
+    width: 60px;
+    /* La largeur finale de la coche */
+    visibility: visible;
+  }
+  to {
+    width: 0;
+    visibility: hidden;
   }
 }
 .heart-full {
