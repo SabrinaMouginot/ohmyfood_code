@@ -17,9 +17,14 @@
     flex-direction: row;
 }
 
-@mixin rounded-top {
-    border-top-left-radius: 20px;
+@mixin rounded-right {
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@mixin rounded-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 @mixin rounded {
@@ -38,6 +43,11 @@
 @mixin space-evenly {
     align-items: center;
     justify-content: space-evenly;
+}
+
+@mixin center {
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin degradedark {
