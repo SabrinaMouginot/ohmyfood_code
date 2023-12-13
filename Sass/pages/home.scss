@@ -11,16 +11,18 @@
     align-items: center;
     height: 50px;
     background-color: darken($light-grey, 5%);
+
     div {
-      width: 200px;
-      margin: auto;
+        width: 200px;
+        margin: auto;
     }
+
     .txtarea {
-      text-align: center;
-      border-width: 0;
-      background-color: darken($light-grey, 5%);
+        text-align: center;
+        border-width: 0;
+        background-color: darken($light-grey, 5%);
     }
-  }
+}
 
 .reserve {
     @include block;
@@ -91,52 +93,76 @@
         gap: 18px;
 
         .restaurant {
-            img {
-                @include w-100;
-                @include rounded-top;
-                @include flex-row;
-                height: 251px;
-                justify-content: space-between;
-                object-fit: cover;
-            }
-
-            .card-content {
-                @include w-100;
-                @include flex-row;
-                padding: 14px;
-                justify-content: space-between;
-                box-sizing: border-box;
-                gap: 5px;
-
-                .card-txt {
-                    width: 80%;
-
-                    .card-title {
-                        margin: 0;
-                    }
-
-                    .card-subtitle {
-                        margin: 0;
-                    }
-                }
-
-                .card-rating {
-                    @include flex-column;
-                    width: 15%;
-                    justify-content: flex-start;
-                    align-items: flex-end;
-                }
-            }
-
+            display: inline-block;
+            position: relative;
             .card {
                 @include flex-column;
                 @include w-100;
                 @include rounded;
                 background-color: $light;
+
+                img {
+                    @include w-100;
+                    @include rounded-top;
+                    @include flex-row;
+                    height: 251px;
+                    justify-content: space-between;
+                    object-fit: cover;
+                }
+
+                .nouveau {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $tertiary;
+                    margin: 2% 5% 0px 0px;
+                    color: rgb(82, 80, 80);
+                    width: 30%;
+                    height: 10%;
+                    position: absolute;
+                    z-index: 1;
+                    right: 0%;
+                    top: 2%;
+                }
+
+                .card-content {
+                    @include w-100;
+                    @include flex-row;
+                    padding: 14px;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    gap: 5px;
+
+                    .card-txt {
+                        width: 80%;
+
+                        .card-title {
+                            margin: 0;
+                        }
+
+                        .card-subtitle {
+                            margin: 0;
+                        }
+                    }
+
+                    .card-rating {
+                        @include flex-column;
+                        width: 15%;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                    }
+                }
+
+                // .card {
+                //     @include flex-column;
+                //     @include w-100;
+                //     @include rounded;
+                //     background-color: $light;
+                // }
+
             }
 
         }
-
     }
 }
 
@@ -209,7 +235,7 @@
     justify-content: center;
     flex-direction: column;
 
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 3;
     position: fixed; //position fixed pour qu'il soit aussi visible sur tout l'écran même si tu scroll
     height: 100vh;
