@@ -280,11 +280,11 @@ header span {
 }
 .restaurants-container .restaurants .restaurant .card .nouveau {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #99E2D0;
   margin: 2% 5% 0px 0px;
-  color: rgb(82, 80, 80);
+  color: #00825f;
   width: 30%;
   height: 10%;
   position: absolute;

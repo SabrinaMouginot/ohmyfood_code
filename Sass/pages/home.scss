@@ -112,11 +112,13 @@
 
                 .nouveau {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    // justify-content: center;
+                    // align-items: center;
+                    @include center;
                     background: $tertiary;
                     margin: 2% 5% 0px 0px;
-                    color: rgb(82, 80, 80);
+                    // color: rgb(82, 80, 80);
+                    color: $nouveau;
                     width: 30%;
                     height: 10%;
                     position: absolute;
